@@ -8,24 +8,10 @@
 <body>
     Please enter a domain name
     <input type="text" id="searchip">
+    <div id="loader" style="display:none;">
+        <img src="ajax-loader.gif" alt=""/>
+    </div>
     <div id="resultip"></div>
-    <script>
-        $(document).ready(function(){
-            $('#searchip').change(function(){
-                var fromPage = $('#searchip').val();
-                console.log(fromPage);
-                $.ajax({
-
-                    type: 'GET',
-                    url: 'server/playingwithajax.php',
-                    data: 'ip=' + $('#searchip').val(),
-                    success: function(msg){
-                        $('#resultip').html(msg);
-                    }
-                }); //Ajax call
-                
-            });//event handler
-        });//document.ready
-    </script>
+    <script src="playingwithajax.js"></script>
 </body>
 </html>
