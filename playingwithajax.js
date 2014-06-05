@@ -10,7 +10,7 @@
                 $(document).ajaxComplete(function(){
                         $('#loader').hide();
                         console.log('Ajax call completed!');
-                }); 
+                });
 
                 $.ajax({
                     type: 'GET',
@@ -18,7 +18,6 @@
                     data: 'ip=' + $('#searchip').val(),
                     success: function(msg){
                         $('#resultip').html(msg);
-                        console.log(msg);
                     }
                 }); //Ajax call
                 
