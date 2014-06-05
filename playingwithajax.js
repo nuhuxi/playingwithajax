@@ -18,6 +18,7 @@
                     data: 'ip=' + $('#searchip').val(),
                     success: function(msg){
                         $('#resultip').html(msg);
+                        console.log(msg);
                     }
                 }); //Ajax call
                 
