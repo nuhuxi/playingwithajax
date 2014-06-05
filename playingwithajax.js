@@ -7,10 +7,10 @@
                         console.log('Ajax send occured');
                 });
                 
-              /*  $(document).ajaxComplete(function(){
+                $(document).ajaxComplete(function(){
                         $('#loader').hide();
                         console.log('Ajax call completed!');
-                }); */
+                }); 
 
                 $.ajax({
                     type: 'GET',
